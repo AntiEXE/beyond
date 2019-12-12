@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+
+        android:padding="2dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="GROUP NAME"
+            android:textAppearance="?android:textAppearance"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:text="Lorem impsum dolor color vegante rehbo" />
+
+        <CheckBox
+            android:id="@+id/notify_me_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="SUBSCRIBE"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
